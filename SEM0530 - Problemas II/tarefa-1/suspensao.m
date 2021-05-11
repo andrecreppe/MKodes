@@ -11,7 +11,7 @@ function res = suspensao(u)
   h = sqrt(power(L, 2) - power(d, 2));
   pit = sqrt(power(d, 2) + power((h-u), 2));
   
-  % Quebrando a equação para facilitar leitura
+  % Quebrando a equacao para facilitar leitura
   a = 2 .* k .* (L-pit);
   b = (h-u) ./ pit;
   c = m .* g;

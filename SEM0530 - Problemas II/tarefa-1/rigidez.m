@@ -1,8 +1,20 @@
 # rigidez.m
 function res = rigidez(u)
-  % Dados do enunciado
+  % Dados providos do enunciado do problema
+  d = 0.2;
+  L = 0.5;
+  k = 10000;
   g = 9.81;
   m = 180 + 72; % 118029(72)
   
-  res = (g .* m) ./ u;
+  % Outros valores importantes que precisam ser calculados
+  h = sqrt(power(L, 2) - power(d, 2));
+  pit = sqrt(power(d, 2) + power((h-u), 2));
+  
+  % Quebrando a equacao para facilitar leitura
+  a = 2 .* k .* (L-pit) .* (h-u);
+  b = u .* pit;
+  
+  % Juntando de acordo
+  res = a ./ b;
 end
