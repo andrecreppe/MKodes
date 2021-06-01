@@ -1,4 +1,4 @@
-function [L,U] = lu decomp(A)
+function [L,U] = luDecomp(A)
   % A: matriz quadrada
   % L, U: matrizes triang. inf. e sup., respectivamente
   n = size(A,1);
