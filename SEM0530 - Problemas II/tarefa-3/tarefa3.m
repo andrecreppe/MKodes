@@ -4,16 +4,16 @@ close all;
 
 % Matriz de Rigidez do Sistema
 
-k = rigidez();
+[k, K] = rigidez();
 
 % Caso 1: Forcas Aplicadas Simultaneamentes
 
-u1 = caso1(k)
+u1 = caso1(K)
 u1tot = sum(u1)
 
 % Caso 2: Deslocamento na Extremidade Livre
 
-u2 = caso2(k)
+u2 = caso2(K)
 u2tot = sum(u2)
 
 % Graficos
@@ -21,7 +21,7 @@ u2tot = sum(u2)
 n = 1:10;
 
 figure
-plot(n, diag(k), 'm');
+plot(n, k, 'm');
 xlabel('Mola');
 xlim([1 10]);
 ylabel('Rigidez da Mola (N/m)');
