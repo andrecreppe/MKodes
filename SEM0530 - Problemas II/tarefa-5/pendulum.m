@@ -1,0 +1,1 @@
+# pendulum.mfunction d2thetadt2 = pendulum(t, theta)  m = 1;  c = 0.5;  r = 1.75;  g = 9.807;      d2thetadt2 = [    theta(2);    (-c ./ m) .* theta(2) + (-g ./ r) .* sin(theta(1));  ];    end
