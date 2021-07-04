@@ -1,0 +1,1 @@
+function [x,k] = newtonSis(F,Jac,x,tol,kmax)  % F: funcao vetorial  % Jac: Jacobiano de F  % x: chute inicial (vetor coluna)  if nargin == 4    kmax = 1000;  end      for k=1:kmax    v = Jac(x)\F(x);    x = x - v;        if norm(v) < tol      return;    end  endend
