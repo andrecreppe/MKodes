@@ -22,9 +22,9 @@ th = [0:-tick:thmax];
 % Preparo 
 if isSteps
     % Rotacao em Passos
-    thxv = [th th(end)+0*th th(end)+0*th]; 
+    thzv = [th th(end)+0*th th(end)+0*th]; 
     thyv = [0*th th th(end)+0*th];
-    thzv = [0*th 0*th th];
+    thxv = [0*th 0*th th];
 else 
     % Rotacao Simultanea
     thxv = th;
