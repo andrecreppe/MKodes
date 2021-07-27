@@ -1,0 +1,1 @@
+% modLOG.mfunction f = modLOG(k,M)    global t    % Modelo Logaritimico    num = 2 .* M .* exp(k .* t);    den = M + 2 .* (exp(k .* t) - 1);    f = num ./ den;end
