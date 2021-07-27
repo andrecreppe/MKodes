@@ -1,0 +1,1 @@
+% Runge-Kuttta de ordem 4function [X,Y]=rk4(func,x0,y0,N,h)  X=zeros(1,N);  Y=X;  X(1)=x0;  Y(1)=y0;    for i=1:N    k1 = func(X(i),Y(i));    k2 = func(X(i)+.5*h,Y(i)+.5*h*k1);    k3 = func(X(i)+.5*h,Y(i)+.5*h*k2);    k4 = func(X(i)+h,Y(i)+h*k3);    Y(i+1) = Y(i) + h*(k1+2*(k2+k3)+k4)/6;    X(i+1) = X(i) + h;  endend
