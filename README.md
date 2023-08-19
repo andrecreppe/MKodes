@@ -1,2 +1,2 @@
 # matlab-mk
-Repositório para guardar os códigos feitos para as discplinas da graduação do curso de Engenharia Mecatrônica - USP de São Carlos
+Repositório geral para os códigos feitos durante as disciplinas do curso de Engenharia Mecatrônica na EESC USP
