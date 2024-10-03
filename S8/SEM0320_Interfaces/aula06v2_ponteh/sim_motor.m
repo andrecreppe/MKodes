@@ -5,11 +5,11 @@ clc;
 % 2 = VCC
 % 3 = Bm
 % 4 = La
-flag_var = 4;
+flag_var = 1;
 
 % 1 = Posicao
 % 2 = Velocidade
-flag_plot = 2;
+flag_plot = 1;
 
 %% Variaveis Originais
 
