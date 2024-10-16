@@ -3,6 +3,7 @@ clc;
 
 uM = 50;
 TL = 0.3;
+% TL = 7.335; % torque de estol
 
 rs = 1;
 Lls = 5e-4;
