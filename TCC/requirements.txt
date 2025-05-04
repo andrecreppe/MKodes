@@ -1,0 +1,10 @@
+# Math
+numpy==2.2.5
+# Image Processing
+opencv-python==4.11.0.86
+scikit-image==0.25.2
+# Plotting
+matplotlib==3.10.1
+# Astronomy
+astropy==7.0.1
+photutils==2.2.0
