@@ -1,0 +1,5 @@
+Os arquivos foram migrados para o repositório "pooridge" (Tiago Oliva) para os arquivos estarem disposíveis para todo o grupo.
+
+Ao final do desenvolvimento, os arquivos serão repassados pra cá.
+
+26/05/2025
